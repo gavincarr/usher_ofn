@@ -2,64 +2,42 @@ services:
 - type: web
   name: ofn.me
   env: static
+  buildCommand: ""
+  staticPublishPath: ./build
   routes:
-  - type: redirect
-    source: /spoor
-    destination: https://github.com/gavincarr/spoor
   - type: redirect
     source: /keybase
     destination: https://keybase.io/gavincarr/
   - type: redirect
-    source: /pkje
-    destination: http://pkje.net/
-  - type: redirect
-    source: /ofc
-    destination: http://www.openfusion.com.au/
-  - type: redirect
-    source: /rbo
-    destination: http://fairtrading.nsw.gov.au/rentalbondsonline
-  - type: redirect
-    source: /comm
-    destination: http://www.openfusion.net/tips/substracting_text_files
-  - type: redirect
-    source: /ofn
-    destination: http://www.openfusion.net/
-  - type: redirect
-    source: /lwcdk
-    destination: http://www.openfusion.com.au/~gavin/laura_dk_arrival.jpg
-  - type: redirect
     source: /ofrepo
     destination: http://www.openfusion.net/linux/openfusion_rpm_repository
-  - type: redirect
-    source: /pppm
-    destination: http://www.openfusion.net/perl/parallel_processing_perl_modules
-  - type: redirect
-    source: /bsearch
-    destination: https://github.com/ProfoundNetworks/bsearch
-  - type: redirect
-    source: /s3
-    destination: https://docs.aws.amazon.com/s3/index.html
-  - type: redirect
-    source: /depths
-    destination: http://iplayif.com/?story=http://hannah.openfusion.com.au/Depths.zblorb
-  - type: redirect
-    source: /usher
-    destination: https://github.com/gavincarr/usher
-  - type: redirect
-    source: /pwp
-    destination: http://www.openfusion.net/talks/pwp/
   - type: redirect
     source: /ra
     destination: https://github.com/rariera
   - type: redirect
-    source: /twitter
-    destination: https://twitter.com/gavincarr
+    source: /blog
+    destination: http://www.openfusion.net/
+  - type: redirect
+    source: /bsearch
+    destination: https://github.com/ProfoundNetworks/bsearch
+  - type: redirect
+    source: /aoe
+    destination: http://www.openfusion.net/linux/aoe_on_rhel_centos
+  - type: redirect
+    source: /ofc
+    destination: http://www.openfusion.com.au/
   - type: redirect
     source: /x250
     destination: http://www.openfusion.net/linux/x250_centos
   - type: redirect
-    source: /extract
-    destination: http://www.openfusion.net/sysadmin/extract
+    source: /depths
+    destination: http://iplayif.com/?story=http://hannah.openfusion.com.au/Depths.zblorb
+  - type: redirect
+    source: /gh
+    destination: https://github.com/gavincarr
+  - type: redirect
+    source: /ofn
+    destination: http://www.openfusion.net/
   - type: redirect
     source: /github
     destination: https://github.com/gavincarr
@@ -67,14 +45,26 @@ services:
     source: /index
     destination: http://www.openfusion.net/
   - type: redirect
+    source: /lwcdk
+    destination: http://www.openfusion.com.au/~gavin/laura_dk_arrival.jpg
+  - type: redirect
+    source: /pkje
+    destination: http://pkje.net/
+  - type: redirect
+    source: /pppm
+    destination: http://www.openfusion.net/perl/parallel_processing_perl_modules
+  - type: redirect
+    source: /rfc
+    destination: http://www.openfusion.net/linux/rpm_find_changes
+  - type: redirect
+    source: /s3
+    destination: https://docs.aws.amazon.com/s3/index.html
+  - type: redirect
     source: /shrtn
     destination: https://github.com/gavincarr/shrtn
   - type: redirect
-    source: /aoe
-    destination: http://www.openfusion.net/linux/aoe_on_rhel_centos
-  - type: redirect
-    source: /gh
-    destination: https://github.com/gavincarr
+    source: /comm
+    destination: http://www.openfusion.net/tips/substracting_text_files
   - type: redirect
     source: /ebill
     destination: http://www.openfusion.net/web/ebilling_still_sucks
@@ -82,8 +72,20 @@ services:
     source: /ngsym
     destination: http://www.openfusion.net/sysadmin/symlink_redirects_in_nginx
   - type: redirect
-    source: /rfc
-    destination: http://www.openfusion.net/linux/rpm_find_changes
+    source: /rbo
+    destination: http://fairtrading.nsw.gov.au/rentalbondsonline
   - type: redirect
-    source: /blog
-    destination: http://www.openfusion.net/
+    source: /spoor
+    destination: https://github.com/gavincarr/spoor
+  - type: redirect
+    source: /usher
+    destination: https://github.com/gavincarr/usher
+  - type: redirect
+    source: /extract
+    destination: http://www.openfusion.net/sysadmin/extract
+  - type: redirect
+    source: /pwp
+    destination: http://www.openfusion.net/talks/pwp/
+  - type: redirect
+    source: /twitter
+    destination: https://twitter.com/gavincarr
