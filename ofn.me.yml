@@ -1,3 +1,4 @@
+INDEX: http://www.openfusion.net/
 aoe: http://www.openfusion.net/linux/aoe_on_rhel_centos
 blog: http://www.openfusion.net/
 bsearch: https://github.com/ProfoundNetworks/bsearch
@@ -7,7 +8,6 @@ ebill: http://www.openfusion.net/web/ebilling_still_sucks
 extract: http://www.openfusion.net/sysadmin/extract
 gh: https://github.com/gavincarr
 github: https://github.com/gavincarr
-index: http://www.openfusion.net/
 keybase: https://keybase.io/gavincarr/
 lwcdk: http://www.openfusion.com.au/~gavin/laura_dk_arrival.jpg
 ngsym: http://www.openfusion.net/sysadmin/symlink_redirects_in_nginx
